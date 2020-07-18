@@ -69,6 +69,32 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    padding: 1%;
+}
+
+header{
+    display: inline-block;
+    padding: auto;
+    margin: 1%;
+    float: left;
+
+ }
+
+.myNav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img{
+  padding: 2%;
+   margin: 0em;
+   width: auto;
 }
 
 .top-content {
@@ -112,6 +138,46 @@ p {
     justify-content: center;
 }
 
+div#one {
+   background-color: teal;
+}
+
+div#two {
+    background-color: gold;
+}
+
+div#three {
+    background-attachment: cadetblue;
+}
+
+div#four {
+    background-color: coral;
+}
+
+div#five {
+ background-color: crimson;
+}
+
+div#six {
+    background-color: forestgreen;
+}
+
+div#seven {
+    background-color: darkorchid;
+}
+
+div#eight {
+    background-color: hotpink;
+}
+
+div#nine {
+    background-color: indigo;
+}
+
+div#ten {
+    background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -129,6 +195,7 @@ p {
 footer {
     width: 100%;
     background: black;
+
 }
 
 footer nav {
@@ -143,4 +210,23 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+body{
+    border: 70px solid white;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#images {
+    display: block;
+    width: 50%;
+}
+
+text-Img {
+    margin: 2%;
 }
