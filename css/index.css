@@ -54,7 +54,10 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    max-width: 72%;
+    margin: 0 auto;
 }
+
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
@@ -67,34 +70,34 @@ p {
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
-    padding: 1%;
+    margin: 0;
+    padding: 2px;
 }
-
-header{
-    display: inline-block;
-    padding: auto;
-    margin: 1%;
-    float: left;
-
- }
 
 .myNav{
     display: flex;
-    justify-content: space-evenly;
-    margin: 5%;
+    justify-content: space-around;
+    margin: 3%;
 }
 
-a {
+nav ul{
+display: flex;
+}
+
+.myNav a {
     text-decoration: none;
     color: black;
+    padding: 5px;
+    margin: 40px;
+}
+
+header{
+    float: left;
 }
 
 img{
-  padding: 2%;
-   margin: 0em;
-   width: auto;
+    padding: auto;
+     margin: auto;
 }
 
 .top-content {
@@ -103,6 +106,7 @@ img{
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding: 2em;
 }
 
 .top-content .text-container {
@@ -110,6 +114,7 @@ img{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
 
 .middle-content {
     margin-bottom: 20px;
@@ -124,7 +129,7 @@ img{
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .middle-content .boxes .box {
@@ -138,45 +143,65 @@ img{
     justify-content: center;
 }
 
-div#one {
-   background-color: teal;
-}
-
-div#two {
-    background-color: gold;
-}
-
-div#three {
-    background-attachment: cadetblue;
-}
-
-div#four {
-    background-color: coral;
-}
-
-div#five {
- background-color: crimson;
-}
-
-div#six {
-    background-color: forestgreen;
-}
-
-div#seven {
-    background-color: darkorchid;
-}
-
-div#eight {
-    background-color: hotpink;
-}
-
-div#nine {
-    background-color: indigo;
-}
-
-div#ten {
-    background-color: dodgerblue;
-}
+#One {
+    background-color: teal;
+    width: 120px;
+    height: 110px;
+ }
+ 
+#Two {
+     background-color: gold;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Three {
+     background-attachment: cadetblue;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Four {
+     background-color: coral;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Five {
+  background-color: crimson;
+  width: 120px;
+    height: 110px;
+ }
+ 
+ #Six {
+     background-color: forestgreen;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Seven {
+     background-color: darkorchid;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Eight {
+     background-color: hotpink;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Nine {
+     background-color: indigo;
+     width: 120px;
+    height: 110px;
+ }
+ 
+ #Ten {
+     background-color: dodgerblue;
+     width: 120px;
+    height: 110px;
+ }
 
 .bottom-content {
     display: flex;
@@ -192,10 +217,10 @@ div#ten {
     padding-right: 0;
 }
 
+
 footer {
     width: 100%;
     background: black;
-
 }
 
 footer nav {
@@ -212,21 +237,80 @@ footer nav a {
     text-decoration: none;
 }
 
-body{
-    border: 70px solid white;
+/* about css starts here */
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    max-width: 72%;
+    margin: 0 auto;
 }
 
-.flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 2%;
+    font-family: 'Rubik', sans-serif;
 }
 
-#images {
-    display: block;
-    width: 50%;
+h1{
+    padding: 2px;
+    margin: 1%;
 }
 
-text-Img {
+p {
+    line-height: 1.4;
     margin: 2%;
 }
+.middle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    padding: 2em;
+}
+
+.middle-content .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+button{
+font-size: 15px;
+border-radius: 13%;
+background-color: white;
+color: black;
+padding: 5px;
+margin: 2px;
+}
+
+.final-content {
+    margin-top: 20px;
+    border-top: 1px dashed black;
+}
+
+
+/* SELF-STUDY QUESTIONS */
+
+/* 1: If you were to describe semantic HTML to the next cohort of students, what would you say?
+
+A: Semantic html is basically html that has meaning. Its put into proper "order", easy to read/ understand, and most of all it has to make sense. */
+
+/* 2: Name two big differences between display: block; and display: inline;. 
+
+A: display: block; content is displayed in a new line and uses the full width available 
+display: inline; Always uses the same line never creating a new one and only takes up as much space as it needs. */
+
+/* 3: What are the 4 areas of the box model? 
+
+A: Content, padding, border, margin */
+
+/* 4: While using flexbox, what axis does the following property work on: align-items: center? 
+
+A: Main axis */
+
+/* 5: Explain why git is valuable to a team of developers.
+
+A: Git is valuable to a team of developers because it allows your team to be able to share your code easily, viewing code is easy, making changes is also simple, its very accessible to virtually anyone all you need is to create a Github account! */
